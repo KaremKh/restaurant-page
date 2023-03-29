@@ -1,21 +1,21 @@
-Alkatra Variable Font
-=====================
+Edu NSW ACT Foundation Variable Font
+====================================
 
-This download contains Alkatra as both a variable font and static fonts.
+This download contains Edu NSW ACT Foundation as both a variable font and static fonts.
 
-Alkatra is a variable font with this axis:
+Edu NSW ACT Foundation is a variable font with this axis:
   wght
 
 This means all the styles are contained in a single file:
-  Alkatra-VariableFont_wght.ttf
+  EduNSWACTFoundation-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Alkatra:
-  static/Alkatra-Regular.ttf
-  static/Alkatra-Medium.ttf
-  static/Alkatra-SemiBold.ttf
-  static/Alkatra-Bold.ttf
+in those cases you can use the static font files for Edu NSW ACT Foundation:
+  static/EduNSWACTFoundation-Regular.ttf
+  static/EduNSWACTFoundation-Medium.ttf
+  static/EduNSWACTFoundation-SemiBold.ttf
+  static/EduNSWACTFoundation-Bold.ttf
 
 Get started
 -----------

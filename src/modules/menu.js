@@ -1,196 +1,170 @@
 import _ from 'lodash';
 console.log("wa karem");
 import '../style.css';
-import Background from '../images/background.jpg';
+
 import Icon1 from '../images/icon1.png';
 import Icon2 from '../images/icon2.png';
 import Icon3 from '../images/icon3.png';
-import Shawarma from '../images/shawarma.jpeg';
-import Entrees from '../images/entrees.jpg';
-import Drink from '../images/drink.jpg';
-import Brunch from '../images/brunch.jpg'
+import BackgroundImg from '../images/back-img.jpg';
 import loadHome from './home';
+import menuImage from '../images/menu.png';
+import Menu1 from '../images/menu1.png'
+import Menu2 from '../images/menu2.png'
 
 
 function loadMenu() {
 
-    const contentDiv =  document.querySelector('#content')
-
-    contentDiv.innerHTML = '';
-
-    const orderNowDiv = document.createElement('div');
-    orderNowDiv.classList.add('order-now');
-
-    const headerDiv = document.createElement('div');
-    headerDiv.classList.add('header');
-
-    const logoDiv = document.createElement('div');
-    logoDiv.classList.add('logo');
-    logoDiv.textContent = 'KoulTime';
-
-    const tabsDiv = document.createElement('div');
-    tabsDiv.classList.add('tabs');
-
-    const nav = document.createElement('nav');
-    const ul = document.createElement('ul');
-
-    const homeLi = document.createElement('li');
-    const homeLink = document.createElement('a');
-    homeLink.href = '#';
-    homeLink.textContent = 'Home';
-
-    homeLink.addEventListener('click', () => {
-        loadHome();
-    });
-
-    homeLi.appendChild(homeLink);
-
-    const menuLi = document.createElement('li');
-    const menuLink = document.createElement('a');
-    menuLink.href = '#';
-    menuLink.textContent = 'Menu';
-    menuLi.appendChild(menuLink);
-
-    const contactLi = document.createElement('li');
-    const contactLink = document.createElement('a');
-    contactLink.href = '#';
-    contactLink.textContent = 'Contact';
-    contactLi.appendChild(contactLink);
-
-    ul.appendChild(homeLi);
-    ul.appendChild(menuLi);
-    ul.appendChild(contactLi);
-
-    nav.appendChild(ul);
-    tabsDiv.appendChild(nav);
+  document.body.className = '';
+  document.body.classList.add('menu');
 
 
-    const buttonsDiv = document.createElement('div');
-    buttonsDiv.classList.add('buttons');
 
-    const userIconLink = document.createElement('a');
-    userIconLink.href = '#';
-    userIconLink.classList.add('button-icon');
+  const contentDiv =  document.querySelector('#content');
+  contentDiv.innerHTML = '';
+  
+  const headerDiv = document.createElement('div');
+  headerDiv.classList.add('header');
+  
+  const logoDiv = document.createElement('div');
+  logoDiv.classList.add('logo');
+  logoDiv.textContent = 'KoulTime';
+  
+  const tabsDiv = document.createElement('div');
+  tabsDiv.classList.add('tabs');
+  
+  const nav = document.createElement('nav');
+  const ul = document.createElement('ul');
+  
+  const homeLi = document.createElement('li');
+  const homeLink = document.createElement('a');
 
-    const userIconImg = document.createElement('img');
-    userIconImg.id = 'user-icon';
-    userIconImg.alt = 'User Icon';
-    userIconImg.src = Icon1;
 
-    userIconLink.appendChild(userIconImg);
+  homeLink.href = '#';
+  homeLink.textContent = 'Home';
+  
+  homeLink.addEventListener('click', () => {
+      loadHome();
+  });
+  
+  homeLi.appendChild(homeLink);
+  
+  const menuLi = document.createElement('li');
+  const menuLink = document.createElement('a');
+  menuLink.href = '#';
+  menuLink.textContent = 'Menu';
+  menuLi.appendChild(menuLink);
+  
+  const contactLi = document.createElement('li');
+  const contactLink = document.createElement('a');
+  contactLink.href = '#';
+  contactLink.textContent = 'Contact';
+  contactLi.appendChild(contactLink);
+  
+  ul.appendChild(homeLi);
+  ul.appendChild(menuLi);
+  ul.appendChild(contactLi);
+  
+  nav.appendChild(ul);
+  tabsDiv.appendChild(nav);
+  
+  const buttonsDiv = document.createElement('div');
+  buttonsDiv.classList.add('buttons');
+  
+  const userIconLink = document.createElement('a');
+  userIconLink.href = '#';
+  userIconLink.classList.add('button-icon');
+  
+  const userIconImg = document.createElement('img');
+  userIconImg.id = 'user-icon';
+  userIconImg.alt = 'User Icon';
+  userIconImg.src = Icon1;
+  
+  userIconLink.appendChild(userIconImg);
+  
+  const cartIconLink = document.createElement('a');
+  cartIconLink.href = '#';
+  cartIconLink.classList.add('button-icon');
+  
+  const cartIconImg = document.createElement('img');
+  cartIconImg.id = 'cart-icon';
+  cartIconImg.alt = 'Cart Icon';
+  cartIconImg.src = Icon2;
+  
+  cartIconLink.appendChild(cartIconImg);
+  
+  const searchIconLink = document.createElement('a');
+  searchIconLink.href = '#';
+  searchIconLink.classList.add('button-icon');
+  
+  const searchIconImg = document.createElement('img');
+  searchIconImg.id = 'search-icon';
+  searchIconImg.alt = 'Search Icon';
+  searchIconImg.src = Icon3
+  
+  searchIconLink.appendChild(searchIconImg);
+  
+  const signInButton = document.createElement('button');
+  signInButton.classList.add('button');
+  signInButton.textContent = 'Sign In';
+  
+  buttonsDiv.appendChild(userIconLink);
+  buttonsDiv.appendChild(cartIconLink);
+  buttonsDiv.appendChild(searchIconLink);
+  buttonsDiv.appendChild(signInButton);
+  
+  headerDiv.appendChild(logoDiv);
+  headerDiv.appendChild(tabsDiv);
+  headerDiv.appendChild(buttonsDiv);
+  
+  contentDiv.appendChild(headerDiv);
 
-    const cartIconLink = document.createElement('a');
-    cartIconLink.href = '#';
-    cartIconLink.classList.add('button-icon');
+    // Get the ul element
+var menuList = document.querySelector('ul');
 
-    const cartIconImg = document.createElement('img');
-    cartIconImg.id = 'cart-icon';
-    cartIconImg.alt = 'Cart Icon';
-    cartIconImg.src = Icon2;
+// Get all the li elements inside the ul
+var lis = menuList.querySelectorAll('li');
 
-    cartIconLink.appendChild(cartIconImg);
 
-    const searchIconLink = document.createElement('a');
-    searchIconLink.href = '#';
-    searchIconLink.classList.add('button-icon');
+lis[0].classList.remove('active');
+lis[2].classList.remove('active');
+lis[1].classList.add('active');
 
-    const searchIconImg = document.createElement('img');
-    searchIconImg.id = 'search-icon';
-    searchIconImg.alt = 'Search Icon';
-    searchIconImg.src = Icon3
+// create the menutitle element
+const menutitleDiv = document.createElement('div');
+menutitleDiv.classList.add('menutitle');
 
-    searchIconLink.appendChild(searchIconImg);
+const titleDiv = document.createElement('div');
+titleDiv.classList.add('title');
+titleDiv.textContent = 'Menu';
 
-    const signInButton = document.createElement('button');
-    signInButton.classList.add('button');
-    signInButton.textContent = 'Sign In';
+const menuImg = document.createElement('img');
+menuImg.src = menuImage;
+menutitleDiv.appendChild(menuImg);
+menutitleDiv.appendChild(titleDiv);
 
-    buttonsDiv.appendChild(userIconLink);
-    buttonsDiv.appendChild(cartIconLink);
-    buttonsDiv.appendChild(searchIconLink);
-    buttonsDiv.appendChild(signInButton);
+// create the before element and set its background image
+const beforeDiv = document.createElement('div');
+beforeDiv.classList.add('menutitle-background');
+beforeDiv.style.backgroundImage = `url(${BackgroundImg})`;
 
-    headerDiv.appendChild(logoDiv);
-    headerDiv.appendChild(tabsDiv);
-    headerDiv.appendChild(buttonsDiv);
+// insert the before element as the first child of menutitle
+menutitleDiv.insertBefore(beforeDiv, menutitleDiv.firstChild);
 
-    const orderDiv = document.createElement('div');
-orderDiv.classList.add('order');
+// append the menutitle element to the content element
+contentDiv.appendChild(menutitleDiv);
 
-orderNowDiv.appendChild(headerDiv);
-orderNowDiv.appendChild(orderDiv);
+const menuDiv = document.createElement('div');
+menuDiv.classList.add('menu-container');
+const menu1 = document.createElement('img');
+menu1.src = Menu1;
+const menu2 = document.createElement('img');
+menu2.src = Menu2;
 
-const promoDiv = document.createElement('div');
-promoDiv.classList.add('promo');
+menuDiv.appendChild(menu1);
+menuDiv.appendChild(menu2);
+contentDiv.appendChild(menuDiv);
 
-const promos = [
-    {
-      title: "Lunch cial",
-      value: "20% off on all",
-      image: Shawarma
-    },
-    {
-      title: "Famileast",
-      value: "Get a free appetizer platter withs",
-      image: Entrees
-    },
-    {
-      title: "Happy Hour",
-      value: "Enjoy half-priced dri from 4pm to 6pm every day",
-      image: Drink
-    },
-    {
-      title: "Weekendunch",
-      value: "Try our new bruncng Middle Eastern-inspired dishes",
-      image: Brunch
-    }
-  ];
-
-for (let i = 0; i<4; i++){
-    const promoCard = document.createElement('div');
-    promoCard.classList.add('card');
-    promoCard.id = `card${i+1}`;
-    const promoImg = document.createElement('img');
-    promoImg.id = 'promo-img';
-    promoImg.src = promos[i].image;
-    const promoTitle = document.createElement('h4');
-    promoTitle.id = 'promo-title';
-    promoTitle.textContent = promos[i].title;
-    const promoValue = document.createElement('h3');
-    promoValue.id = 'promo-value';
-    promoValue.textContent = promos[i].value;
-    const promoButton = document.createElement('button');
-    promoButton.id = 'promo-btn';
-    promoButton.textContent = 'Copy Code';
-
-    promoCard.appendChild(promoImg);
-    promoCard.appendChild(promoTitle);
-    promoCard.appendChild(promoValue);
-    promoCard.appendChild(promoButton);
-
-    promoDiv.appendChild(promoCard);
-} 
-
-const footerDiv = document.createElement('div');
-footerDiv.classList.add('footer');
-
-contentDiv.appendChild(orderNowDiv);
-contentDiv.appendChild(promoDiv);
-contentDiv.appendChild(footerDiv);
-
-const restoIntro = document.createElement('div');
-restoIntro.classList.add('intro');
-const introHeader = document.createElement('h1');
-introHeader.textContent = 'KoulTime'; 
-const introP = document.createElement('p');
-introP.textContent = 'Welcome to KoulTime Restaurant, where we serve authentic Arabic cuisine made with fresh ingredients and traditional recipes passed down through generations.'; // Description of the restaurant
-const introB = document.createElement('button');
-introB.classList.add('button');
-introB.textContent = 'View Menu'; 
-restoIntro.appendChild(introHeader);
-restoIntro.appendChild(introP);
-restoIntro.appendChild(introB);
-orderDiv.appendChild(restoIntro);
+  
 
 
 

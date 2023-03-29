@@ -15,6 +15,8 @@ import loadMenu from './menu';
 
 function loadHome() {
 
+  document.body.className = '';
+  
     let contentDiv;
 
     if (document.querySelector('#content') == null){
@@ -57,6 +59,10 @@ function loadHome() {
     menuLink.href = '#';
     menuLink.textContent = 'Menu';
     menuLi.appendChild(menuLink);
+
+    menuLink.addEventListener('click', () => {
+      loadMenu();
+  });
 
     const contactLi = document.createElement('li');
     const contactLink = document.createElement('a');
@@ -202,12 +208,23 @@ restoIntro.appendChild(introP);
 restoIntro.appendChild(introB);
 orderDiv.appendChild(restoIntro);
 
+// Get the ul element
+var menuList = document.querySelector('ul');
+
+// Get all the li elements inside the ul
+var lis = menuList.querySelectorAll('li');
+
+
+lis[0].classList.add('active');
+lis[1].classList.remove('active');
+lis[2].classList.remove('active');
 
 
 
 
 
-console.log("switching to home");
+
+
   }
 
   export default loadHome;
