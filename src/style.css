@@ -1,77 +1,75 @@
 @font-face {
-  font-family: 'MyFont';
-  src: url('fonts/Lato-Regular.ttf') format('truetype');
+  font-family: "MyFont";
+  src: url("fonts/Lato-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'MyFont';
-  src: url('fonts/Lato-Light.ttf') format('truetype');
+  font-family: "MyFont";
+  src: url("fonts/Lato-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'MyFont';
-  src: url('fonts/Lato-Thin.ttf') format('truetype');
+  font-family: "MyFont";
+  src: url("fonts/Lato-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'MyFont';
-  src: url('fonts/Lato-Bold.ttf') format('truetype');
+  font-family: "MyFont";
+  src: url("fonts/Lato-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-    font-family: "LogoFont";
-    src: url("fonts/sweet-purple.otf") format("opentype"),
-         url("fonts/sweet-purple.ttf") format("truetype");
-  }
+  font-family: "LogoFont";
+  src: url("fonts/sweet-purple.otf") format("opentype"),
+    url("fonts/sweet-purple.ttf") format("truetype");
+}
 
-  @font-face {
-    font-family: 'PromoFont';
-    src: url('fonts/static/EduNSWACTFoundation-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'PromoFont';
-    src: url('fonts/static/EduNSWACTFoundation-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'PromoFont';
-    src: url('fonts/static/EduNSWACTFoundation-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'PromoFont';
-    src: url('fonts/static/EduNSWACTFoundation-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-  }
-  
+@font-face {
+  font-family: "PromoFont";
+  src: url("fonts/static/EduNSWACTFoundation-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 
-  :root {
-    --primary-color: rgb(45, 45, 48);
-    --secondary-color: #ab521a;
-    --success-color: #28a745;
-  }
+@font-face {
+  font-family: "PromoFont";
+  src: url("fonts/static/EduNSWACTFoundation-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PromoFont";
+  src: url("fonts/static/EduNSWACTFoundation-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PromoFont";
+  src: url("fonts/static/EduNSWACTFoundation-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --primary-color: rgb(45, 45, 48);
+  --secondary-color: #ab521a;
+  --success-color: #28a745;
+}
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'MyFont', Courier, monospace;
-    
+  margin: 0;
+  padding: 0;
+  font-family: "MyFont", Courier, monospace;
 }
 
 nav li.active a {
@@ -79,222 +77,223 @@ nav li.active a {
   color: var(--secondary-color);
 }
 
-body{
-    background-color: white;
+body {
+  background-color: white;
 }
 
 body.menu {
   background-color: var(--primary-color);
 }
+
+body.contact {
+  background-color: var(--primary-color);
+}
 .order-now {
-    width: 100vw;
-    min-height: 50vh;
-    background-image: url("./images/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  min-height: 50vh;
+  background-image: url("./images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding-bottom: 30px;
 }
 
-
-
 .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* Center align the menu items */
-  }
-  
-  nav li {
-    margin: 0 10px; /* Add some margin between the menu items */
-  }
-  
-  nav a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    font-weight: 700;
-    font-size: 16px;
-  }
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center align the menu items */
+}
 
-  nav a:hover {
-    transform: scale(1.1);
-  }
+nav li {
+  margin: 0 10px; /* Add some margin between the menu items */
+}
 
-  .logo {
-    font-family: 'LogoFont', Courier, monospace;
-    color: white;
-    font-size: 30px;
-  }
+nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 16px;
+}
 
-  .buttons {
-    display: flex;
-    align-items: center;
-  }
-  
-  .button-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-  
-  }
-  
-  .button-icon img {
-    width: 20px; /* adjust the size of the images as needed */
-    height: 20px;
-    display: block; /* make the images a block element */
-    margin: auto; /* center the images vertically and horizontally */
+nav a:hover {
+  transform: scale(1.1);
+}
 
-  }
-  
-  .button {
-    background-color: var(--secondary-color);
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    margin-left: 10px;
-    width: 120px;
-  }
+.logo {
+  font-family: "LogoFont", Courier, monospace;
+  color: white;
+  font-size: 30px;
+}
 
-  .hello {
-    color: green;
-  }
+.buttons {
+  display: flex;
+  align-items: center;
+}
 
-  .order {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    
-  }
+.button-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
 
-  .intro {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 40%;
-    margin-right: 5%;
-    margin-top: 10vh;
-    color: white;
-  }
+.button-icon img {
+  width: 20px; /* adjust the size of the images as needed */
+  height: 20px;
+  display: block; /* make the images a block element */
+  margin: auto; /* center the images vertically and horizontally */
+}
 
-  .intro h1 {
-    font-family: 'LogoFont', Courier, monospace; ;
-  }
+.button {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 10px;
+  width: 120px;
+}
 
-  .promo {
-    background-color: white;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(380px, 1fr));
-    gap: 70px 40px;
-    margin: 80px 120px;
-  }
+.hello {
+  color: green;
+}
 
-  .promo>.card {
-    font-family: 'PromoFont', Courier, monospace;
-    color: white;
-    box-sizing: border-box;
-    padding: 20px;
-    display: grid;
-    grid-template: 1fr 1fr 1fr / 1fr 3fr ;
-    background-color: var(--primary-color);
-    width: 100%;
-    height: 250px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    align-items: center;
-    gap: 0px 30px;
-    
-  }
+.order {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
 
-  #promo-img {
-    border-radius: 50%;
-    border: 4px solid var(--secondary-color);
-    grid-row: 1/4;
-  }
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+  margin-right: 5%;
+  margin-top: 10vh;
+  color: white;
+}
 
-  #promo-value {
-    font-weight: 500;
-    font-size: 17px;
-    font-weight: 400;
-  }
+.intro h1 {
+  font-family: "LogoFont", Courier, monospace;
+}
 
-  #promo-title {
-    font-weight: 300;
-  }
+.promo {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 70px 40px;
+  margin: 80px 120px;
+}
 
-  #promo-btn {
-    background-color: var(--secondary-color);
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    margin-left: 10px;
-    width: 120px;
-  }
+.promo > .card {
+  font-family: "PromoFont", Courier, monospace;
+  color: white;
+  box-sizing: border-box;
+  padding: 20px;
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 3fr;
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  gap: 0px 30px;
+}
 
-  .card img {
-    height: 130px;
-    width: 130px;
-  }
+#promo-img {
+  border-radius: 50%;
+  border: 4px solid var(--secondary-color);
+  grid-row: 1/4;
+}
 
-  button:hover {
-    transform: scale(1.03);
-    cursor: pointer;
-  }
+#promo-value {
+  font-weight: 500;
+  font-size: 17px;
+  font-weight: 400;
+}
 
+#promo-title {
+  font-weight: 300;
+}
 
-  .menutitle-background {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    height: 15vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-clip: content-box;
-    filter: brightness(30%) blur(2px);
-  }
-  .menutitle {
-    height: 15vh;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    gap: 8px;
-    
-  }
+#promo-btn {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 10px;
+  width: 120px;
+}
 
-  .menutitle .title {
-    font-family: 'PromoFont', Courier, monospace;
-    font-weight: 700;
-    font-size: 30px;
-  }
+.card img {
+  height: 130px;
+  width: 130px;
+}
 
-  .menutitle img {
-    width: 40px ;
-    height: 40px ;
-  }
+button:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.contacttitle-background,
+.menutitle-background {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  height: 25vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: content-box;
+  filter: brightness(20%) blur(1px);
+}
+.contacttitle,
+.menutitle {
+  height: 25vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 8px;
+}
+
+.contacttitle .title,
+.menutitle .title {
+  font-family: "PromoFont", Courier, monospace;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.contacttitle img,
+.menutitle img {
+  width: 40px;
+  height: 40px;
+}
 
 .menu-container {
   display: flex;
@@ -302,10 +301,71 @@ nav ul {
   gap: 20px;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 .menu-container img {
   max-width: 800px;
   width: 80%;
 }
-  
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: var(--secondary-color);
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 20px 20px 20px;
+  border-radius: 0 0 5px 5px;
+  background-color: rgb(57, 57, 61);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+input,
+textarea {
+  display: block;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  height: 120px;
+}
+
+.contact-container button {
+  display: block;
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #cc5500;
+}

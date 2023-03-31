@@ -1,4 +1,3 @@
-import loadHome from "./modules/home";
+import loadPage from './modules/load';
 
-loadHome();
-
+loadPage();
